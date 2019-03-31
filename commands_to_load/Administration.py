@@ -193,7 +193,7 @@ class Administration():
 
 		return conn
 
-	@commands.command()
+	@commands.command(aliases=['stats'])
 	async def frequency(self, ctx, *args):
 		logger.info("[Administration frequency()] frequency command detected from "+str(ctx.message.author)+" with arguments ["+str(args)+"]")
 		if len(args) == 0:
