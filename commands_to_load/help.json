@@ -1,4 +1,70 @@
 { "commands" : [
+		{
+			"access": "role",
+			"role" : [ "Bot_manager" ],
+			"name": "Class: Administration"
+		},
+		{
+			"access": "role",
+			"role" : [ "Bot_manager" ],
+			"name": [ "load" ], 
+			"example": [ ".load <arg>" ],
+			"description": [
+								"loads the commands in the class <arg>.",
+								"The classes and their corresponding commands can be determined using the \".help\" command."
+							]
+		},
+		{
+			"access": "role",
+			"role" : [ "Bot_manager" ],
+			"name": [ "unload" ],
+			"example": [ ".unload <arg>" ],
+			"description": [
+								"unloads the commands in the class <arg>.",
+								" The classes and their corresponding commands can be determined using the \".help\" command."
+							]
+		},
+		{
+			"access": "role", 
+			"role" : [ "Bot_manager" ], 
+			"name": [ "reload" ], 
+			"example": [".reload <arg>" ], 
+			"description": [
+								"reloads the commands in the class <arg>.",
+								"The classes and their corresponding commands can be determined using the \".help\" command."
+							]
+		},
+		{
+			"access": "role",
+			"role" : [ "Bot_manager" ],
+			"name": [ "exc" ],
+			"example": [ ".exc <arg>" ],
+			"description": [
+								"executes the command <arg> on the bot server.",
+								"The classes and their corresponding commands can be determined using the \".help\" command."
+							]
+		},
+		{
+			"access": "role",
+			"role" : [ "Bot_manager" ],
+			"name": [ 
+						"frequency", 
+						"stats"
+					],
+			"example": [ 
+						"`.frequency command`",
+						"`.stats command \"Channel Name\"`",
+						"`.frequency year day`"
+					],
+			"description": [
+								"created a graph in order to visualize how the bot is used the most",
+								"the bot is actively storing all possible information about each time it is used.",
+								"This is done so the Bot_managers can see how different things about each command.",
+								"If you would like to see all the different ways that the bot can be used, run `.stats`",
+								"in order to group multiple columns into one, you can just specify them on the command-line like so"
+							]
+		},
+
 		{	"access": "role", 
 			"role" : [ "Bot_manager" ],
 			"name": "Class: HealthChecks"
@@ -157,52 +223,6 @@
 			"description": [
 								"deletes a reminder that has a messageId of <arg>", 
 								"the \"messageId\" can be obtained by using the \".showreminders\" command" 
-							]
-		},
-
-		{
-			"access": "role",
-			"role" : [ "Bot_manager" ],
-			"name": "Class: Administration"
-		},
-		{
-			"access": "role",
-			"role" : [ "Bot_manager" ],
-			"name": [ "load" ], 
-			"example": [ ".load <arg>" ],
-			"description": [
-								"loads the commands in the class <arg>.",
-								"The classes and their corresponding commands can be determined using the \".help\" command."
-							]
-		},
-		{
-			"access": "role",
-			"role" : [ "Bot_manager" ],
-			"name": [ "unload" ],
-			"example": [ ".unload <arg>" ],
-			"description": [
-								"unloads the commands in the class <arg>.",
-								" The classes and their corresponding commands can be determined using the \".help\" command."
-							]
-		},
-		{
-			"access": "role", 
-			"role" : [ "Bot_manager" ], 
-			"name": [ "reload" ], 
-			"example": [".reload <arg>" ], 
-			"description": [
-								"reloads the commands in the class <arg>.",
-								"The classes and their corresponding commands can be determined using the \".help\" command."
-							]
-		},
-		{
-			"access": "role",
-			"role" : [ "Bot_manager" ],
-			"name": [ "exc" ],
-			"example": [ ".exc <arg>" ],
-			"description": [
-								"executes the command <arg> on the bot server.",
-								"The classes and their corresponding commands can be determined using the \".help\" command."
 							]
 		},
 
